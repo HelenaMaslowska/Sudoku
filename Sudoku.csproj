@@ -46,33 +46,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main_Window.cs">
+    <Compile Include="Forms\Main_Window.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main_Window.Designer.cs">
+    <Compile Include="Forms\Main_Window.Designer.cs">
       <DependentUpon>Main_Window.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Sources\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Control_Main_Menu_File.cs">
+    <Compile Include="Controls\Control_Main_Menu_File.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control_Main_Menu_File.Designer.cs">
+    <Compile Include="Controls\Control_Main_Menu_File.Designer.cs">
       <DependentUpon>Control_Main_Menu_File.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control_Sudoku_Game.cs">
+    <Compile Include="Controls\Control_Sudoku_Game.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control_Sudoku_Game.Designer.cs">
+    <Compile Include="Controls\Control_Sudoku_Game.Designer.cs">
       <DependentUpon>Control_Sudoku_Game.cs</DependentUpon>
     </Compile>
-    <Compile Include="PieceSudoku3x3.cs">
+    <Compile Include="Controls\PieceSudoku3x3.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PieceSudoku3x3.Designer.cs">
+    <Compile Include="Controls\PieceSudoku3x3.Designer.cs">
       <DependentUpon>PieceSudoku3x3.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Main_Window.resx">
+    <EmbeddedResource Include="Forms\Main_Window.resx">
       <DependentUpon>Main_Window.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -84,13 +84,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Control_Main_Menu_File.resx">
+    <EmbeddedResource Include="Controls\Control_Main_Menu_File.resx">
       <DependentUpon>Control_Main_Menu_File.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control_Sudoku_Game.resx">
+    <EmbeddedResource Include="Controls\Control_Sudoku_Game.resx">
       <DependentUpon>Control_Sudoku_Game.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PieceSudoku3x3.resx">
+    <EmbeddedResource Include="Controls\PieceSudoku3x3.resx">
       <DependentUpon>PieceSudoku3x3.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -104,7 +104,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Sources\App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
