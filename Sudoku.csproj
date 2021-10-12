@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Button_Controls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Button_Controls.Designer.cs">
+      <DependentUpon>Button_Controls.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Main_Window.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,12 @@
     </Compile>
     <Compile Include="Controls\PieceSudoku3x3.Designer.cs">
       <DependentUpon>PieceSudoku3x3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sudoku_Board.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sudoku_Board.Designer.cs">
+      <DependentUpon>Sudoku_Board.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Forms\Main_Window.resx">
       <DependentUpon>Main_Window.cs</DependentUpon>

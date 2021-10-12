@@ -23,6 +23,7 @@ namespace Sudoku
             //PieceSudoku = new PieceSudoku3x3();
 
             start_window_control.set_after_changes(Push_Butt);
+            game_window_control.set_after_changes(Push_Butt);
 
             start_window_control.Dock = DockStyle.Fill;
             game_window_control.Dock = DockStyle.Fill;
@@ -30,6 +31,7 @@ namespace Sudoku
 
             this.Controls.Add(start_window_control);
             this.Controls.Add(game_window_control);
+            //hide_forms();
             //this.Controls.Add(PieceSudoku);
         }
 
@@ -51,6 +53,10 @@ namespace Sudoku
                 case Buttons.choose:
                     hide_forms();
                     break;
+                case Buttons.back:
+                    hide_forms();
+                    start_window_control.Show();
+                    break;
                 case Buttons.exit:
                     hide_forms();
                     this.Close();
@@ -61,7 +67,7 @@ namespace Sudoku
 
         private void Window_Load(object sender, EventArgs e)
         {
-
+            game_window_control.Hide();
         }
 
     }

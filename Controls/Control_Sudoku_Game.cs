@@ -10,8 +10,9 @@ using System.Windows.Forms;
 
 namespace Sudoku
 {
-    public partial class Control_Sudoku_Game : UserControl
+    public partial class Control_Sudoku_Game : Button_Controls
     {
+
         public Control_Sudoku_Game()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace Sudoku
         //private void GButton_Back_Click(object sender, EventArgs e) { after_changes(Buttons.back); }
         private void GButton_Back_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            after_changes(Buttons.back);
         }
     }
 }
